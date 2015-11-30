@@ -1,0 +1,6 @@
+<launch>
+        <param name="robot_description" command="cat $(find ros_threeseg)/threeseg.urdf" />
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+        <node name="state_publisher_threeseg" pkg="ros_threeseg" type="state_publisher_threeseg" />
+</launch>
+
